@@ -1,0 +1,669 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="asset/css/responsive.css">
+</head>
+
+<body>
+    <div class="sectionbody">
+        <div class="main-wrapper">
+            <!--navbar -->
+            <div class="header-container fixed-top ">
+                <header class="header navbar navbar-expand-sm expand-header justify-content-between d-flex ">
+                    <div class="header-left d-flex">
+                        <!--logo-->
+                        <div class="logo">
+                            Devingine
+                        </div>
+
+                        <!--logo ends -->
+                        <a href="#" class="slidebarcollapse align-self-center" id="toggleSlidebar"
+                            data-placement="bottom">
+                            <span class="fas fa-bars"> </span>
+                        </a>
+                    </div>
+                    <!--ul nav bar -->
+                    <ul class="navbar-item flex-row d-flex gap-5">
+                        <li class="nav-item dropdown user-profile-dropdown   ">
+                            <a href="" class="nav-link user fs-25 position-relative" id="Notify"
+                                data-bs-toggle="dropdown">
+                                <img src="asset/images/3602145.png" alt="" class="icon ">
+                                <p class="count position-absolute top-0">5</p>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dp-main-menu">
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/server.png" alt="" class="user-note">
+                                        <div class="note-info-desmis">
+                                            <div class="user-notify-info">
+                                                <p class="note-name"> sever Rebooted </p>
+                                                <p class="note-time">20 mins ago</p>
+                                            </div>
+                                            <p href="" class="status-link "><span class="fas fa-times"></span></p>
+                                        </div>
+
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/heart.png" alt="" class="user-note">
+                                        <div class="note-info-desmis">
+                                            <div class="user-notify-info">
+                                                <p class="note-name"> Love your Work </p>
+                                                <p class="note-time">22 mins ago</p>
+                                            </div>
+                                            <p href="" class="status-link"><span class="fas fa-times"></span></p>
+                                        </div>
+
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/delivery-note.png" alt="" class="user-note">
+                                        <div class="note-info-desmis">
+                                            <div class="user-notify-info">
+                                                <p class="note-name">Helal sent a file</p>
+                                                <p class="note-time">25 mins ago</p>
+                                            </div>
+                                            <p href="" class="status-link"><span class="fas fa-times"></span></p>
+                                        </div>
+
+                                    </a>
+
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/mark.png" alt="" class="user-note">
+                                        <div class="note-info-desmis">
+                                            <div class="user-notify-info">
+                                                <p class="note-name">Server don't work</p>
+                                                <p class="note-time">25 mins ago</p>
+                                            </div>
+                                            <p href="" class="status-link"><span class="fas fa-times"></span></p>
+                                        </div>
+
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/delivery-note.png" alt="" class="user-note">
+                                        <div class="note-info-desmis">
+                                            <div class="user-notify-info">
+                                                <p class="note-name">Helal sent a file</p>
+                                                <p class="note-time">25 mins ago</p>
+                                            </div>
+                                            <p href="" class="status-link"><span class="fas fa-times"></span></p>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="nav-item dropdown user-profile-dropdown   ">
+                            <a href="" class="nav-link user fs-25 position-relative" id="Notify"
+                                data-bs-toggle="dropdown">
+                                <img src="asset/images/email.png" alt="" class="icon ">
+                                <p class="count position-absolute top-0 bg-orange">5</p>
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="dp-main-menu">
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/download.jpeg" alt="" class="sms-user">
+                                        <div class="user-message-info">
+                                            <p class="m-user-name">Hellal Uddin</p>
+                                            <p class="user-role">super Admin</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/download (1).jpeg" alt="" class="sms-user">
+                                        <div class="user-message-info">
+                                            <p class="m-user-name">AdminSohel </p>
+                                            <p class="user-role">Admin</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/download (2).jpeg" alt="" class="sms-user">
+                                        <div class="user-message-info">
+                                            <p class="m-user-name">Shinthia Kabir</p>
+                                            <p class="user-role">Co-Admin</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/download (3).jpeg" alt="" class="sms-user">
+                                        <div class="user-message-info">
+                                            <p class="m-user-name">Jewel Rana</p>
+                                            <p class="user-role">Writer</p>
+                                        </div>
+                                    </a>
+                                    <a href="" class="dropdown-item message-item d-flex">
+                                        <img src="asset/images/images.jpeg" alt="" class="sms-user">
+                                        <div class="user-message-info">
+                                            <p class="m-user-name">Raisa Khan</p>
+                                            <p class="user-role">Admin</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown user-profile-dropdown   ">
+                            <a href="" class="nav-link user fs-25 position-relative" id="Notify"
+                                data-bs-toggle="dropdown">
+                                <img src="asset/images/profile.png" alt="" class="icon ">
+
+                            </a>
+                            <div class="dropdown-menu menu">
+                                <div class="user-profile-section">
+                                    <div class="media ">
+                                        <img src="asset/images/profile.png" alt="" class="img-fluid mr-2">
+                                        <div class="media-body">
+                                            <h5>Hellal uddin</h5>
+                                            <p>Super admin</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dp-main-menu">
+                                    <a href="" class="dropdown-item"><span
+                                            class="fas fa-user profile"></span>profile</a>
+                                    <a href="" class="dropdown-item"><span class="fas fa-inbox profile"></span>Inbox</a>
+                                    <a href="" class="dropdown-item"><span class="fas fa-lock-open profile"></span>Look
+                                        Screen</a>
+                                    <a href="" class="dropdown-item"><span class="fas fa-outdent profile"></span>Log
+                                        out</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown user-profile-dropdown   ">
+                            <a href="" class="nav-link user fs-25 position-relative" id="Notify"
+                                data-bs-toggle="dropdown">
+                                <img src="asset/images/settings.png" alt="" class="icon ">
+
+                            </a>
+                            <div class="dropdown-menu let">
+                                <div class="dp-main-menu">
+                                    <a href="" class="dropdown-item"><span
+                                            class="fas fa-plug profile"></span>permition</a>
+                                    <a href="" class="dropdown-item"><span
+                                            class="fas fa-users profile"></span>Admins</a>
+                                    <a href="" class="dropdown-item"><span
+                                            class="fas fa-object-ungroup profile"></span>design Type</a>
+                                    <a href="" class="dropdown-item"><span
+                                            class="fas fa-palette profile"></span>color</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <!--ul navbar ebnds -->
+                </header>
+            </div>
+            <!--navbar ends -->
+            <div class="left-menu">
+                <div class="menubar-content">
+                    <nav class="animated bounceInDown">
+                        <ul id="slidebar">
+                            <li class="active"><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                            <li><a href="#"><i class="fas fa-box-open"></i>Widgets</a></li>
+                            <li><a href="#"><i class="fab fa-uikit"></i>UI elements</a></li>
+                            <li><a href="#"><i class="fas fa-chart-bar"></i>advance</a></li>
+                            <li><a href="#"><i class="fab fa-telegram-plane"></i>Form Elements</a></li>
+                            <li><a href="#"><i class="fas fa-edit"></i>Editors</a></li>
+                            <li><a href="#"><i class="fas fa-chart-bar"></i>Charts</a></li>
+                            <li><a href="#"><i class="fas fa-table"></i>Tables</a></li>
+                            <li><a href="#"><i class="fas fa-info-circle"></i>Popops</a></li>
+                            <li><a href="#"><i class="fas fa-bell"></i>Nofication</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i>Icons</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i>Maps</a></li>
+                            <li><a href="#"><i class="fas fa-times-circle"></i>Error Pages</a></li>
+                            <li><a href="#"><i class="fas fa-plus"></i>Generals Pages</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i>E-Commerce</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>E-mail</a></li>
+                            <li><a href="#"><i class="fas fas fa-list"></i>Todo List</a></li>
+                            <li><a href="#"><i class="fas fa-image"></i>Gallery</a></li>
+                            <li><a href="#"><i class="fas fa-book"></i>Documentation</a></li>
+                            <li class="sub-menu"><a href="#"><i class="fas fa-cogs"></i>settings
+                                    <div class="fa fa-caret-down right"></div>
+                                </a>
+                                <ul class="left-menu-dp">
+                                    <li><a href=""><i class="fas fa-user-circle"></i>Accounts</a></li>
+                                    <li><a href=""><i class="fas fa-id-card"></i>Profile</a></li>
+                                    <li><a href=""><i class="fas fa-fingerprint"></i>Security &aamp; privacy</a></li>
+                                    <li><a href=""><i class="fas fa-key"></i>Passwords</a></li>
+                                    <li><a href=""><i class="fas fa-bell"></i>Notifications</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fas fa-image"></i>Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!--slidebar ends-->
+
+            <div class="content-wrapper">
+                <section class="dashboard-top-sec">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-8 ">
+                                <div class="bg-white top-chart-earn py-3">
+                                    <div class="row">
+                                        <div class="col-sm-4 my-2 pe-0 ">
+                                            <div class="last-month">
+                                                <h5>Dashboard</h5>
+                                                <p>Overview of Latest Month</p>
+
+                                                <div class="earn">
+                                                    <h2>3367.98</h2>
+                                                    <p>Current Month Sales</p>
+                                                </div>
+                                                <div class="sale mb-5">
+                                                    <h2>95</h2>
+                                                    <p>Current Month Sales</p>
+                                                </div>
+                                                <a href="" class="di-btn purple-gradient">Last Month Summary</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-8 my-2  ps-0">
+                                            <div class="classic-tabs">
+                                                <div class="tabs-wrapper">
+                                                    <ul class="nav nav-pills chart-header-tab mb-3" id="pills-tab"
+                                                        role="tablist">
+                                                        <li class="nav-item">
+                                                            <a href="#" class="nav-link chart-nav  active"
+                                                                id="pills-home-tab" data-bs-toggle="pill"
+                                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                                aria-controls="pills-home" aria-selected="true">week</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a href="#" class="nav-link chart-nav "
+                                                                id="pills-profile-tab" data-bs-toggle="pill"
+                                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                                aria-controls="pills-profile"
+                                                                aria-selected="false">Month</a>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <a href="#" class="nav-link chart-nav "
+                                                                id="pills-contact-tab" data-bs-toggle="pill"
+                                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                                aria-controls="pills-contact"
+                                                                aria-selected="false">Years</a>
+                                                        </li>
+
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="pills-home"
+                                                            role="tabpanel" aria-labelledby="pills-home-tab"
+                                                            tabindex="0">
+                                                            <div class="widget-content">
+                                                                <div id="weekly-chart">
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                            aria-labelledby="pills-profile-tab" tabindex="0">
+                                                            <div class="widget-content">
+                                                                <div id="monthly-chart">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                                            aria-labelledby="pills-contact-tab" tabindex="0">
+                                                            <div class="widget-content">
+                                                                <div id="yearly-chart">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                           
+                                    </div>
+                                </div>
+                                <div class="wre-sec">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
+                                            <div class="earn-view">
+                                             <span class="fas fa-crown earn-icon wallet">
+                                             </span>
+                                             <div class="earn-view-text">
+                                                 <p class="naame-text">
+                                                     wallet Ballance
+                                                 </p>
+                                                 <h6 class="ballance-text">
+                                                     $1684.54
+                                                 </h6>
+                                             </div>
+                                            </div>
+                                       </div>
+
+                                       <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
+                                        <div class="earn-view">
+                                         <span class="fas fa-heart earn-icon referral">
+                                         </span>
+                                         <div class="earn-view-text">
+                                             <p class="naame-text">
+                                                referral earning
+                                             </p>
+                                             <h6 class="ballance-text">
+                                                 $1204.54
+                                             </h6>
+                                         </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
+                                    <div class="earn-view">
+                                     <span class="fab fa-salesforce earn-icon sales">
+                                     </span>
+                                     <div class="earn-view-text">
+                                         <p class="naame-text">
+                                             Estimate sales
+                                         </p>
+                                         <h6 class="ballance-text">
+                                             $184.54
+                                         </h6>
+                                     </div>
+                                    </div>
+                               </div>
+                               <div class="col-md-3 col-sm-3 col-6 my-1 bdr-cls">
+                                <div class="earn-view">
+                                 <span class="fas fa-chart-line earn-icon earning">
+                                 </span>
+                                 <div class="earn-view-text">
+                                     <p class="naame-text">
+                                       Earning
+                                     </p>
+                                     <h6 class="ballance-text">
+                                         $16984.54
+                                     </h6>
+                                 </div>
+                                </div>
+                           </div>
+                               
+                                    </div>
+                                   
+                              </div>
+                                
+                            </div>
+                            
+
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="bg-white top-chart-earn">
+                                    <div class="traffice-tittle">
+                                        <p>Traffice</p>
+                                    </div>
+                                    <div class="traffice">
+                                        <div id="chart-2">
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </section>
+                <section>
+                    <div class="sm-chart-sec my-5">
+                       <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-lg-3   col-md-6 col-sm-6 my-2">
+                              
+                               <div class="revinue revinue-one_hybrid">
+                                     <div class="revinue-hedding">
+                                    <div class="w-title">
+                                      <div class="w-icon">
+                                          <span class="fas fa-users"></span>
+                                      </div>
+                                      <div class="sm-chart-text">
+                                          <p class="w-value">31.9k</p>
+                                          <h5>Followers</h5>
+                                      </div>
+                                    </div>
+                                      </div>
+
+                                     <div class="revinue-content">
+                                        <div id="hybrid_followers">
+
+                                        </div>
+                                     </div> 
+                               </div>
+                            </div>
+                            <div class="col-lg-3   col-md-6 col-sm-6 my-2">
+                              
+                                <div class="revinue page-one_hybrid">
+                                      <div class="revinue-hedding">
+                                     <div class="w-title">
+                                       
+                                       <div class="sm-chart-text">
+                                           <p class="w-value"> 654K</p>
+                                           <h5>Page view</h5>
+                                       </div>
+                                     </div>
+                                       </div>
+ 
+                                      <div class="revinue-content">
+                                         <div id="hybrid_follower">
+                                             
+                                         </div>
+                                      </div> 
+                                </div>
+                             </div>
+
+
+                             <div class="col-lg-3   col-md-6 col-sm-6 my-2">
+                              
+                                <div class="revinue bonuce-one_hybrid">
+                                      <div class="revinue-hedding">
+                                     <div class="w-title">
+                                       
+                                       <div class="sm-chart-text">
+                                           <p class="w-value">$432</p>
+                                           <h5>Bonunce Rate</h5>
+                                       </div>
+                                     </div>
+                                       </div>
+ 
+                                      <div class="revinue-content">
+                                         <div id="hybrid_bonunce">
+                                             
+                                         </div>
+                                      </div> 
+                                </div>
+                             </div>
+
+
+                             <div class="col-lg-3   col-md-6 col-sm-6 my-2">
+                              
+                                <div class="revinue rv-status-one_hybrid">
+                                      <div class="revinue-hedding">
+                                     <div class="w-title">
+                                       
+                                       <div class="sm-chart-text">
+                                           <p class="w-value">$ 765 <small>Jan 01 - Jan 19</small></p>
+                                           <h5>Revinue Status</h5>
+                                       </div>
+                                     </div>
+                                       </div>
+ 
+                                      <div class="revinue-content">
+                                         <div id="hybrid_status">
+                                             
+                                         </div>
+                                      </div> 
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                </section>
+
+
+                <section>
+                   <div class="all-admin my-5">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="admin-list">
+                                    <p class="admin-ac-title">All Admin</p>
+                                    <ul class="admin-ul">
+                                        <li class="admin-li">
+                                            <img src="asset/images/download (1).jpeg" alt="" class="admin-image">
+                                            <div class="adminac-details">
+                                               <div>
+                                                <p class="admin-name">Helal Uddin</p>
+                                                <p class="activaty-text">Active Now</p>
+                                               </div> 
+                                               <div class="status bg-success"></div>
+                                            </div>
+                                        </li>
+
+                                        <li class="admin-li">
+                                            <img src="asset/images/download (2).jpeg" alt="" class="admin-image">
+                                            <div class="adminac-details">
+                                               <div>
+                                                <p class="admin-name">Rocky Islam</p>
+                                                <p class="activaty-text">Active 15 min ago</p>
+                                               </div> 
+                                               <div class="status bg-primary"></div>
+                                            </div>
+                                        </li>
+                                        <li class="admin-li">
+                                            <img src="asset/images/download (3).jpeg" alt="" class="admin-image">
+                                            <div class="adminac-details">
+                                               <div>
+                                                <p class="admin-name">Jewel KHan</p>
+                                                <p class="activaty-text">Active 20 min ago</p>
+                                               </div> 
+                                               <div class="status bg-warning"></div>
+                                            </div>
+                                        </li>
+                                        <li class="admin-li">
+                                            <img src="asset/images/download (4).jpeg" alt="" class="admin-image">
+                                            <div class="adminac-details">
+                                               <div>
+                                                <p class="admin-name">Afjal sohel</p>
+                                                <p class="activaty-text">Active 2 Days ago</p>
+                                               </div> 
+                                               <div class="status bg-danger"></div>
+                                            </div>
+                                        </li>
+                                        <li class="admin-li">
+                                            <img src="asset/images/download (5).jpeg" alt="" class="admin-image">
+                                            <div class="adminac-details">
+                                               <div>
+                                                <p class="admin-name">Devigine</p>
+                                                <p class="activaty-text">Active 12 min ago</p>
+                                               </div> 
+                                               <div class="status bg-success"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-8 col-sm-6">
+                                <div class="admin-lst">
+                                    <div class="order-list">
+                                         <p class="admin-ac-title">Order Status</p>
+                                         
+                                         <div class="data-table-section table-responsive">
+                                            <table id="example" class="table table-striped" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Name</th>
+                                                        <th>Position</th>
+                                                        <th>Office</th>
+                                                        <th>Age</th>
+                                                        <th>Start date</th>
+                                                        <th>Salary</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="order-view-tb">
+                                                    <tr class="odd">
+                                                        <td>Tiger Nixon</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>61</td>
+                                                        <td>2011-04-25</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Garrett Winters</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>2011-07-25</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr class="odd">
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009-01-12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009-01-12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr class="odd">
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009-01-12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ashton Cox</td>
+                                                        <td>Junior Technical Author</td>
+                                                        <td>San Francisco</td>
+                                                        <td>66</td>
+                                                        <td>2009-01-12</td>
+                                                        <td>$86,000</td>
+                                                    </tr>
+                                                  </tbody>   
+                                            </table>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   </div>   
+                </section>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  
+     <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+        <script src="asset/js/index.js"></script>
+        <script src="asset/js/chart.js"></script>
+</body>
+
+</html>
